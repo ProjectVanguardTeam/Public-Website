@@ -1,0 +1,40 @@
+.logo {
+    width: 1.5vw;
+    margin-top: -40px;
+    background-color: #231F20;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+}
+  
+  .outer {
+    display: flex;
+    position: fixed;
+    width: 100%;
+  }
+  
+  .outer>p {
+    flex: 1;
+    height: 70px;
+    line-height: 70px;
+    background: #231F20;
+  }
+  
+  .outer>p>a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .outer>p .logo {
+    flex: 1;
+  }
+  
+  p {
+    text-align: center;
+    margin: 0px;
+    font-size: 1.2vw;
+    font-family: Arial;
+  }
+  
+  body {
+    margin: 0px;
+  }
