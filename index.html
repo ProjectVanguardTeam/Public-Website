@@ -8,7 +8,7 @@
     function big() {
   var w = 3;
   var foo = setInterval(function() {
-    if (w > 15) clearInterval(foo)
+    if (w > 10) clearInterval(foo)
     w = w + 1;
     document.getElementById('logo').style.width = w + 'vw';
 
@@ -24,12 +24,12 @@
     <div class="outer">
       <p class="nav-item"><a href="#home">Home</a></p>
       <p class="nav-item"><a href="#features">Features</a></p>
-      <p class="nav-item"><a href="#add-info">Add info</a></p>
+      <p class="nav-item"><a href="#add-info">Alliances</a></p>
   
       <p class="nav-item"><img class="logo" id="logo" src="imgs/logo.png" onload="big()"></p>
-      <p class="nav-item"><a href="#form">Rules & Guidelines</a></p>
-      <p class="nav-item"><a href="#team">Meet The Team</a></p>
-      <p class="nav-item"><a href="#contact">Apply & Appeal</a></p>
+      <p class="nav-item"><a href="rules.html">Rules & Guidelines</a></p>
+      <p class="nav-item"><a href="team.html">Meet The Team</a></p>
+      <p class="nav-item"><a href="apply.html">Apply & Appeal</a></p>
     </div>
   </nav>
 

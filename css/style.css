@@ -1,15 +1,18 @@
 .logo {
-    width: 1.5vw;
-    margin-top: -40px;
+    width: 1.2vw;
+    margin-top: -30px;
     background-color: #231F20;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 
 }
-  
+  .active {
+    color: #8E793E;
+  }
   .outer {
     display: flex;
     position: fixed;
     width: 100%;
+    z-index: 100;
   }
   
   .outer>p {
@@ -17,9 +20,13 @@
     height: 70px;
     line-height: 70px;
     background: #231F20;
+    text-align: center;
+    margin: 0px;
+    font-size: 1.2vw;
+    font-family: Arial;
   }
   
-  .outer>p>a {
+  .outer a {
     text-decoration: none;
     color: white;
   }
@@ -28,13 +35,88 @@
     flex: 1;
   }
   
-  p {
-    text-align: center;
-    margin: 0px;
-    font-size: 1.2vw;
-    font-family: Arial;
-  }
   
   body {
     margin: 0px;
+  }
+
+  .head {
+    height: 800px;
+    width: 100%;
+    position: flex;
+    top: 70px;
+    z-index: 1;
+  }
+
+  .head img {
+    height: 100%;
+    width: 100%;
+  }
+  .heading {
+    position: flex;
+    text-align: center;
+  }
+  .heading>p {
+    align-self: center; 
+    width: 50%;
+    font-size: 1.1vw;
+  }
+  .heading hr {
+    width: 25%;
+    margin-top: -20px;
+  }
+
+  .column {
+    float: left;
+    width: 250px;
+    padding: 0 10px;
+  }
+
+  .card {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  .card p {
+        font-family: 'PT Sans', sans-serif;
+      text-align: center;
+        margin: 0;
+    padding: 0;
+  }
+  
+  .card img {
+      height: 100px;
+      width: 100px;
+  }
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+  .left-col {
+    width: 15%;
+    float: left;
+  }
+  .mid-col {
+    width: 70%;
+    float: left;
+  }
+  .right-col {
+    width: 15%;
+    float: left;
+  }
+  .contain {
+    width: 100%;
+	  position: static;
+    border: 5px solid white;
+    float: left;
+    margin-top: 20px;
   }
